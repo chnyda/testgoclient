@@ -418,7 +418,7 @@ Class | Method | HTTP request | Description
 *PartnersApi* | [**PartnerList**](docs/PartnersApi.md#partnerlist) | **Get** /api/v1/partner | Get partners
 *PaymentApi* | [**PaymentBillingInfo**](docs/PaymentApi.md#paymentbillinginfo) | **Get** /api/v1/payment/billing-info | Get billing info for organization
 *PaymentApi* | [**PaymentCardinfo**](docs/PaymentApi.md#paymentcardinfo) | **Get** /api/v1/payment/cardinfo | Get card information
-*PaymentApi* | [**PaymentGetStripeInvoices**](docs/PaymentApi.md#paymentgetstripeinvoices) | **Get** /api/v1/payment/stripeinvoices/{subscriptionId} | Get required stripe invoices by stripe subscription id
+*PaymentApi* | [**PaymentGetStripeInvoices**](docs/PaymentApi.md#paymentgetstripeinvoices) | **Get** /api/v1/payment/stripeinvoices/{subscriptionId} | 
 *PaymentsApi* | [**PaymentClear**](docs/PaymentsApi.md#paymentclear) | **Post** /api/v1/payment/clear | Clear payment
 *PaymentsApi* | [**PaymentCreateCustomer**](docs/PaymentsApi.md#paymentcreatecustomer) | **Post** /api/v1/payment/createcustomer | Create customer
 *PaymentsApi* | [**PaymentFinalPrice**](docs/PaymentsApi.md#paymentfinalprice) | **Post** /api/v1/payment/finalprice | Fetch final price
@@ -954,11 +954,14 @@ Class | Method | HTTP request | Description
 Authentication schemes defined for the API:
 ### Bearer
 
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+- **Type**: HTTP Bearer token authentication
 
-Note, each API key must be added to a map of `map[string]APIKey` where the key is: Authorization and passed in as the auth context for each request.
+Example
+
+```golang
+auth := context.WithValue(context.Background(), sw.ContextAccessToken, "BEARER_TOKEN_STRING")
+r, err := client.Service.Operation(auth, args)
+```
 
 
 ## Documentation for Utility Methods

@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**PaymentBillingInfo**](PaymentApi.md#PaymentBillingInfo) | **Get** /api/v1/payment/billing-info | Get billing info for organization
 [**PaymentCardinfo**](PaymentApi.md#PaymentCardinfo) | **Get** /api/v1/payment/cardinfo | Get card information
-[**PaymentGetStripeInvoices**](PaymentApi.md#PaymentGetStripeInvoices) | **Get** /api/v1/payment/stripeinvoices/{subscriptionId} | Get required stripe invoices by stripe subscription id
+[**PaymentGetStripeInvoices**](PaymentApi.md#PaymentGetStripeInvoices) | **Get** /api/v1/payment/stripeinvoices/{subscriptionId} | 
 
 
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 
 > StripeInvoices PaymentGetStripeInvoices(ctx, subscriptionId).Execute()
 
-Get required stripe invoices by stripe subscription id
+
 
 ### Example
 

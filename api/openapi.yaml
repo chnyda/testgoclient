@@ -19297,7 +19297,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/StripeInvoices'
-          description: OK
+          description: Success
         "400":
           content:
             application/json:
@@ -19327,8 +19327,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProblemDetails'
-          description: Internal Server Error
-      summary: Get required stripe invoices by stripe subscription id
+          description: Server Error
       tags:
       - Payment
   /api/v1/payment/billing-info:
@@ -35992,8 +35991,8 @@ components:
       type: object
   securitySchemes:
     Bearer:
-      description: "Input your Bearer token in this format - Bearer {your token here}\
-        \ to access this API"
-      in: header
-      name: Authorization
-      type: apiKey
+      bearerFormat: JWT
+      description: "Input your Bearer token in JWT format in this format - Bearer\
+        \ {your JWT here} to access this API"
+      scheme: bearer
+      type: http
