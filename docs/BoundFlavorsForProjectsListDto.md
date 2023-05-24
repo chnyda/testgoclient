@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **IsGoogle** | Pointer to **bool** |  | [optional] 
 **ProjectName** | Pointer to **NullableString** |  | [optional] 
 **MaxDataDiskCount** | Pointer to **NullableInt32** |  | [optional] 
-**HasLinuxSpotPrice** | Pointer to **bool** |  | [optional] 
-**HasWindowsSpotPrice** | Pointer to **bool** |  | [optional] 
+**HasLinuxSpotPrice2** | Pointer to **bool** |  | [optional] 
+**HasWindowsSpotPrice2** | Pointer to **bool** |  | [optional] 
 **LinuxSpotPrice** | Pointer to **NullableString** |  | [optional] 
 **LinuxPrice** | Pointer to **NullableString** |  | [optional] 
 **WindowsSpotPrice** | Pointer to **NullableString** |  | [optional] 
@@ -356,55 +356,55 @@ HasMaxDataDiskCount returns a boolean if a field has been set.
 `func (o *BoundFlavorsForProjectsListDto) UnsetMaxDataDiskCount()`
 
 UnsetMaxDataDiskCount ensures that no value is present for MaxDataDiskCount, not even an explicit nil
-### GetHasLinuxSpotPrice
+### GetHasLinuxSpotPrice2
 
-`func (o *BoundFlavorsForProjectsListDto) GetHasLinuxSpotPrice() bool`
+`func (o *BoundFlavorsForProjectsListDto) GetHasLinuxSpotPrice2() bool`
 
-GetHasLinuxSpotPrice returns the HasLinuxSpotPrice field if non-nil, zero value otherwise.
+GetHasLinuxSpotPrice2 returns the HasLinuxSpotPrice2 field if non-nil, zero value otherwise.
 
-### GetHasLinuxSpotPriceOk
+### GetHasLinuxSpotPrice2Ok
 
-`func (o *BoundFlavorsForProjectsListDto) GetHasLinuxSpotPriceOk() (*bool, bool)`
+`func (o *BoundFlavorsForProjectsListDto) GetHasLinuxSpotPrice2Ok() (*bool, bool)`
 
-GetHasLinuxSpotPriceOk returns a tuple with the HasLinuxSpotPrice field if it's non-nil, zero value otherwise
+GetHasLinuxSpotPrice2Ok returns a tuple with the HasLinuxSpotPrice2 field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetHasLinuxSpotPrice
+### SetHasLinuxSpotPrice2
 
-`func (o *BoundFlavorsForProjectsListDto) SetHasLinuxSpotPrice(v bool)`
+`func (o *BoundFlavorsForProjectsListDto) SetHasLinuxSpotPrice2(v bool)`
 
-SetHasLinuxSpotPrice sets HasLinuxSpotPrice field to given value.
+SetHasLinuxSpotPrice2 sets HasLinuxSpotPrice2 field to given value.
 
-### HasHasLinuxSpotPrice
+### HasHasLinuxSpotPrice2
 
-`func (o *BoundFlavorsForProjectsListDto) HasHasLinuxSpotPrice() bool`
+`func (o *BoundFlavorsForProjectsListDto) HasHasLinuxSpotPrice2() bool`
 
-HasHasLinuxSpotPrice returns a boolean if a field has been set.
+HasHasLinuxSpotPrice2 returns a boolean if a field has been set.
 
-### GetHasWindowsSpotPrice
+### GetHasWindowsSpotPrice2
 
-`func (o *BoundFlavorsForProjectsListDto) GetHasWindowsSpotPrice() bool`
+`func (o *BoundFlavorsForProjectsListDto) GetHasWindowsSpotPrice2() bool`
 
-GetHasWindowsSpotPrice returns the HasWindowsSpotPrice field if non-nil, zero value otherwise.
+GetHasWindowsSpotPrice2 returns the HasWindowsSpotPrice2 field if non-nil, zero value otherwise.
 
-### GetHasWindowsSpotPriceOk
+### GetHasWindowsSpotPrice2Ok
 
-`func (o *BoundFlavorsForProjectsListDto) GetHasWindowsSpotPriceOk() (*bool, bool)`
+`func (o *BoundFlavorsForProjectsListDto) GetHasWindowsSpotPrice2Ok() (*bool, bool)`
 
-GetHasWindowsSpotPriceOk returns a tuple with the HasWindowsSpotPrice field if it's non-nil, zero value otherwise
+GetHasWindowsSpotPrice2Ok returns a tuple with the HasWindowsSpotPrice2 field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetHasWindowsSpotPrice
+### SetHasWindowsSpotPrice2
 
-`func (o *BoundFlavorsForProjectsListDto) SetHasWindowsSpotPrice(v bool)`
+`func (o *BoundFlavorsForProjectsListDto) SetHasWindowsSpotPrice2(v bool)`
 
-SetHasWindowsSpotPrice sets HasWindowsSpotPrice field to given value.
+SetHasWindowsSpotPrice2 sets HasWindowsSpotPrice2 field to given value.
 
-### HasHasWindowsSpotPrice
+### HasHasWindowsSpotPrice2
 
-`func (o *BoundFlavorsForProjectsListDto) HasHasWindowsSpotPrice() bool`
+`func (o *BoundFlavorsForProjectsListDto) HasHasWindowsSpotPrice2() bool`
 
-HasHasWindowsSpotPrice returns a boolean if a field has been set.
+HasHasWindowsSpotPrice2 returns a boolean if a field has been set.
 
 ### GetLinuxSpotPrice
 
